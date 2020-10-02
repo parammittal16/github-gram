@@ -32,6 +32,14 @@ export const getUserByToken = (token) => (dispatch) => {
         });
 };
 
+export const onLogout = () => {
+    console.log('hiii');
+    deleteCookie('token');
+    return (dispatch) => {
+        dispatch({ type: 'AUTH_LOGOUT' });
+    };
+};
+
 export const clearErrorAuth = () => (dispatch) => {
     dispatch({
         type: actionTypes.CLEAR_ERROR,
