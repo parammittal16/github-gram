@@ -1,0 +1,71 @@
+{
+  "name": "github-gram",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.9.1",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.41",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
+    "react": "^16.12.0",
+    "react-cookies": "^0.1.1",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.1.3",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.3.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "forceCoverageMatch": [
+      "**/*.test.js"
+    ],
+    "moduleNameMapper": {
+      "^AppComponents(.*)$": "<rootDir>/src/components$1",
+      "^AppContainers(.*)$": "<rootDir>/src/containers$1",
+      "^AppConstants(.*)$": "<rootDir>/src/constants$1",
+      "^AppStore(.*)$": "<rootDir>/src/store$1",
+      "^AppShared(.*)$": "<rootDir>/src/shared$1",
+      "^AppSrc(.*)$": "<rootDir>/src$1"
+    }
+  },
+  "devDependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.20.1",
+    "react-app-rewire-aliases": "^0.2.0",
+    "react-app-rewired": "^2.1.5",
+    "react-test-renderer": "^16.12.0"
+  }
+}
